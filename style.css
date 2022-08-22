@@ -98,8 +98,13 @@ header {
 @media (max-width: 660px) {
     .cabecalho-primeiro {
         display: flex;
-        flex-direction: column-reverse;
-       
+        flex-direction: column-reverse;      
+    }
+    .menu li a {
+        font-size: 14px;
+    }
+    .menu {
+        justify-content: center;
     }
 }
 

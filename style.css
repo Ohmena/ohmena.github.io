@@ -37,7 +37,6 @@ header {
     margin-bottom: 50px;
 }
 
-
 .header-img {
     width: 80px;
     height: 80px;
@@ -87,6 +86,23 @@ header {
 
 }
 
+@media (max-width: 1080px) {
+    .header-mainimg {
+        max-width: 50%;
+    }
+    .cabecalho-conteudo {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 660px) {
+    .cabecalho-primeiro {
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+}
+
 .cabecalho-conteudo h2 {
     font-size: 48px;
     font-weight: bolder;
@@ -119,9 +135,24 @@ header {
 
 .flex-content {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     max-width: 200px;
+}
+
+@media (max-width:1080px) {
+    .flex-content {
+        max-width: 100px;
+    }
+} 
+
+@media (max-width:660px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
 }
 
 .flex-content img {
@@ -156,8 +187,6 @@ header {
 .action {
     background-color: #3882f6;
     max-width: 800px;
-    display: flex;
-    justify-content: space-around;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 100px;
@@ -184,6 +213,12 @@ header {
     color: #fff;
     padding: 10px 20px;
     border-radius: 4px;
+}
+
+@media (max-width:550px) {
+    .action a {
+       margin: 0;
+    }
 }
 
 .rodape {

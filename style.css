@@ -168,6 +168,19 @@ header {
    border: 4px solid #5a6576;
 }
 
+.balle {
+    background-image: linear-gradient(to bottom right, #2F2325, #8E5D52);
+    background-repeat: no-repeat;
+    width: 225px;
+    height: 350px;
+}
+
+@media (max-width: 600px) {
+    .balle {
+        height: 186px;
+    }
+}
+
 .flex-content img:hover {
     border: 4px #3882f6 solid;
 }

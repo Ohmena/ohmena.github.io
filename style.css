@@ -137,8 +137,24 @@ header {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
     flex-wrap: wrap;
+    position: relative;
+}
+
+.container {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 400px;
+    top: -90px;
+    color: #020f21;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
 }
 
 .flex-content {
@@ -160,6 +176,10 @@ header {
     .flex-content img {
         max-width: 100%;
         width: 120px;    
+    }
+    .container {
+        font-size: 24px;
+        width: 250px;
     }
 }
 
@@ -184,6 +204,10 @@ header {
 
 .flex-content img:hover {
     border: 4px #3882f6 solid;
+}
+
+.texto {
+    font-weight: 500;
 }
 
 .quote {

@@ -150,11 +150,13 @@ header {
     margin-left: auto; 
     margin-right: auto; 
     width: 400px;
-    top: -90px;
+    top: -80px;
     color: #020f21;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 32px;
+    letter-spacing: 1.5px;
+    border-bottom: #1f2937 2px solid;
 }
 
 .flex-content {
@@ -178,7 +180,7 @@ header {
         width: 120px;    
     }
     .container {
-        font-size: 24px;
+        font-size: 20px;
         width: 250px;
     }
 }

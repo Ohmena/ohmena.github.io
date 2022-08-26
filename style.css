@@ -233,11 +233,19 @@ header {
 .action {
     background-color: #3882f6;
     max-width: 800px;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
     padding: 50px;
     border-radius: 4px;
+}
+
+.action-items {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
 }
 
 .action-items h2 {
@@ -259,11 +267,15 @@ header {
     color: #fff;
     padding: 10px 20px;
     border-radius: 4px;
+    align-self: flex-start;
 }
 
 @media (max-width:550px) {
     .action a {
-       margin: 0;
+       margin: 0; /*reseta os 400 pixels do margin-left */
+    }
+    .action-items {
+        gap: 10px;
     }
 }
 

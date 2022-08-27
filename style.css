@@ -33,8 +33,6 @@ body {
 header {
     background-color:#1f2937;
     padding-bottom: 50px;
-    padding-top: 10px;
-    margin-bottom: 50px;
 }
 
 .header-img {
@@ -51,8 +49,8 @@ header {
     justify-content: space-around;
     align-items: center;
     gap: 30px;
-    margin-bottom: 50px;
-    margin-top: 25px;
+    padding-bottom: 50px;
+    padding-top: 25px;
     color: #e5e7eb;
 }
 

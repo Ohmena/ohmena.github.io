@@ -1,0 +1,115 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-image: url(img/excluido.png);
+    height: 1000px;
+}
+
+.main-section {
+    display: flex;
+}
+
+.primeira-parte {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: -300px;
+    margin-top: 100px;
+}
+
+.primeira-parte h1 {
+    font-size: 28px;
+    font-family: 'Nosifer', cursive;
+    color: rgb(190, 7, 7);
+    max-width: 500px;
+}
+
+.primeira-parte a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: rgb(190, 7, 7);
+    color: rgb(243, 209, 209);
+
+}
+
+.botao-flexivel {
+    display: flex;
+    gap: 20px;
+}
+
+.main-section img {
+    display: block;
+}
+
+
+.container {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 50%;  
+    position: relative;
+    left: -510px;
+}
+
+.a {
+    width: 15px;
+    height: 15px;
+    background-color: #1F000B;
+    border-radius: 50%;
+    animation: 8s linear infinite;
+    animation-name: rotate;
+    position: absolute; 
+    left: -40px;  
+  
+}
+
+.b {
+    width: 15px;
+    height: 15px;
+    background-color: #1F000B;
+    border-radius: 50%;
+    animation: 8s linear infinite;
+    animation-name: rotate;
+    position: absolute;
+    left: 70px;
+
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate(20px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(20px) rotate(-360deg);
+    }
+  }

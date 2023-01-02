@@ -2,6 +2,11 @@ body {
     background-image: url(img/excluido.png);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -9,19 +14,35 @@ body {
     gap: 20px;
 }
 
+.lll {
+    position: relative;
+}
+
+.lll img {
+    height: 100%;
+    object-fit: cover;
+}
+
 p {
     max-width: 200px;
     color: red;
 }
 
-img {
-    position: relative;
-    display: block;
-}
-
 span {
     position: absolute;
     top: 300px;
+    right: 40px;
     font-size: 24px;
     color: #fff;
+}
+
+@media(max-width: 600px) {
+    .container {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    } 
+    .container p {
+        max-width: 400px;
+    }
 }

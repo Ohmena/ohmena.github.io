@@ -118,6 +118,10 @@
         color: #fff;
         max-width: initial;
     }
+    .formacao-cursos h3::before, .formacao-idiomas h3::before {
+        left: 0px;
+        top: -30px;
+    }
     .container.formacao {
         grid-template-columns: 1fr;
         gap: 40px ;

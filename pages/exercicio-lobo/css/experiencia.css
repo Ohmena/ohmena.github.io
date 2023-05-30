@@ -1,0 +1,75 @@
+.experiencia h2 {
+    max-width: 4ch;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+.experiencia-paragrafo {
+    max-width: 64ch;
+    margin-bottom: 40px;
+}
+
+.experiencia strong {
+    color: #000;
+    font-weight: 700;
+}
+
+.experiencia-empresas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    background-color: #F5F5F5;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.experiencia-empresas::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    top: 20px;
+    left: -5px;
+    background-image: linear-gradient(#A839FF, #701CDA);
+    position: absolute;
+}
+
+.detalhe {
+    position: absolute;
+    top: 23px;
+    left: -120px;
+    display: block;
+    width: 90px;
+    text-align: right;
+}
+
+.experiencia-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    gap: 20px;
+}
+
+.experiencia-skills li {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+    .experiencia h2 {
+        font-size: 3rem;
+        text-transform: capitalize;
+        color: #141414;
+        max-width: initial;
+    }
+    .container.experiencia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .detalhe {
+       display: none;
+    }
+}

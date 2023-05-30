@@ -1,0 +1,37 @@
+.font-ss {
+    font-size: 0.875rem; /*paragrafo em exp */
+}
+
+.font-ss-bold {
+    font-weight: 700;
+}
+
+.font-s-bold {
+    font-size: 1.125rem; /*link menu, bikcraft, surfbot*/
+    font-weight: 700;
+}
+
+.font-s {
+    font-size: 1.125rem;
+}
+
+.font-m {
+    font-size: 1.5rem; /*paragrafos em geral */
+    line-height: 1.3;
+}
+
+.font-x {
+    font-size: 2.25rem;
+}
+
+.font-xl-b { /*desenv. front-end */
+    font-size: 4.5rem;
+    line-height: 1.125;
+    font-weight: 700;
+}
+
+
+.font-xxl-b { /*exp, formatacao */
+    font-size: 7rem;
+    font-weight: 700;
+}

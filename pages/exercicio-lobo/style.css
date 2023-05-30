@@ -1,0 +1,25 @@
+/* Cabeçalho */
+@import "css/header.css";
+
+/*Tipografia e Cores */
+
+@import "css/cores.css";
+@import "css/tipografia.css";
+
+ /*Introdução */
+
+@import "css/introducao.css";
+
+/*Experiências */
+
+@import "css/experiencia.css";
+
+/*Formação */
+
+@import "css/formacao.css";
+
+/* Footer */
+@import "css/footer.css";
+
+/*Utilidades */
+@import "css/global.css";

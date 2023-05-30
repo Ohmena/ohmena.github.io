@@ -1,0 +1,27 @@
+.footer-bg {
+    background-color: #000;
+}
+
+.footer-info.container {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 120px;
+    align-items: center;
+}
+
+.footer-info a {
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.footer-direito {
+    grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+    .footer-info.container {
+        grid-template-columns: 1fr;
+    }
+
+}

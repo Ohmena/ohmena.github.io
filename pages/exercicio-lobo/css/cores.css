@@ -1,0 +1,45 @@
+/*Paleta de cores. Não necessariamente todas estarão no site. Possíveis alterações */
+
+.cor-0 {
+    color: #fff;
+}
+
+.cor-1 {
+    color: #F5F5F5;
+}
+
+.cor-2 {
+    color: #F0F0F0;
+}
+
+.cor-3 {
+    color: #E0E0E0;
+}
+
+.cor-4 {
+    color: #cccccc;
+}
+
+.cor-5 {
+    color: #A3A3A3;
+}
+
+.cor-6 {
+    color: #8F8F8F;
+}
+
+.cor-7 {
+    color: #141414; /*link, h1, h2...*/
+}
+
+.cor-8 {
+    color: #525252; /*paragrafo */
+}
+
+.cor-9 {
+    color: #090909;
+}
+
+.cor-10 {
+    color: #000;
+}

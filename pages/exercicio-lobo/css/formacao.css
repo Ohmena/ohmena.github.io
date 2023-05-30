@@ -1,0 +1,127 @@
+.formacao.container {
+    padding: 120px 20px;
+    position: relative;
+}
+
+.formacao-bg {
+    background-color: #141414;
+}
+
+.formacao h2 {
+    max-width: 5ch;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+.formacao p {
+    margin-bottom: 60px;
+    max-width: 40ch;
+}
+
+.formacao-lista {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.formacao-itens {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.formacao-itens h3 {
+    margin-bottom: 40px;
+}
+
+.formacao-itens::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    top: 50px;
+    left: -5px;
+    background-image: linear-gradient(#A839FF, #701CDA);
+    position: absolute;
+}
+
+.margin {
+    margin-bottom: 10px;
+}
+
+.formacao-cursos {
+    margin-bottom: 60px;
+}
+
+.formacao-cursos h3 {
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.formacao-cursos h3::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/cursos.svg);
+    position: absolute;
+    left: -30px;
+    top: -4px;
+}
+
+.formacao-cursos li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formacao-idiomas h3 {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.formacao-idiomas h3::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/idiomas.svg);
+    position: absolute;
+    left: -30px;
+    top: -3px;
+}
+
+.formacao-idiomas li {
+    margin-bottom: 20px;
+}
+
+.container.formacao::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url("../img/detalhe.svg") no-repeat center;
+    position: absolute;
+    bottom: -50px;
+}
+
+@media (max-width: 800px) {
+    .formacao h2 {
+        font-size: 3rem;
+        text-transform: capitalize;
+        color: #fff;
+        max-width: initial;
+    }
+    .container.formacao {
+        grid-template-columns: 1fr;
+        gap: 40px ;
+        padding: 60px 20px;
+    }
+
+}

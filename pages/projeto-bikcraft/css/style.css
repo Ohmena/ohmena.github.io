@@ -1,0 +1,22 @@
+/*Cores */
+@import "global/cores.css";
+
+/*Tipografia */
+@import "global/tipografia.css";
+
+/*Resets */
+@import "utilidades.css";
+
+/*Global*/
+@import "global/header.css";
+@import "global/rodape.css";
+
+/*HOME*/
+
+@import "home/principal.css";
+@import "home/bicicletas.css";
+@import "home/tecnologias.css";
+@import "home/parceiros.css";
+@import "home/depoimento.css";
+@import "home/seguros.css";
+

@@ -1,0 +1,63 @@
+.depoimento {
+    background-color: var(--cor-p1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.depoimento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.depoimento-itens {
+    align-self: end;
+    padding: 80px;
+}
+
+.depoimento-itens p {
+    max-width: 32ch;
+    margin-bottom: 32px;
+    font-family: "Roboto";
+    font-style: italic;
+    position: relative;
+}
+
+.depoimento-itens p::before, .depoimento-itens p::after {
+    font-size: 6rem;
+    color: var(--cor-p2);
+    position: absolute;
+    display: inline-block;
+}
+
+.depoimento-itens p::before {
+    content: "“";
+    top: -30px;
+    left: -52px;
+}
+
+.depoimento-itens p::after {
+    content: "”";
+    right: -20px;
+}
+
+@media (min-width: 1200px) {
+    .depoimento img {
+        max-height: 520px;
+    }
+}
+
+@media (max-width: 800px) {
+    .depoimento {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .depoimento img {
+        max-height: 200px;
+    }
+    .depoimento-itens {
+        margin: auto;
+        padding: 40px;
+    }
+}

@@ -4,6 +4,11 @@
     padding-bottom: 120px;
 }
 
+.principal-itens {
+    display: flex;
+    flex-direction: column;
+}
+
 .principal-itens h1 {
     margin-bottom: 16px;
 }
@@ -18,23 +23,18 @@
 
 .principal-itens p {
     margin-bottom: 100px;
+    align-self: flex-end;
     text-align: end;
     max-width: 60ch;
+}
+
+.principal-itens a {
+     align-self: center;
 }
 
 .principal-itens .botao {
     background: #000;
     border: 2px solid var(--cor-decorativa);
-}
-
-.principal-p {
-    display: flex;
-    justify-content: end;
-}
-
-.principal-btn  {
-    display: flex;
-    justify-content: center;
 }
 
 @media (max-width: 800px) {

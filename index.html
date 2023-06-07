@@ -1,73 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmena's Repository</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfólio Front-End">
+    <title>Ohmena | Portifólio</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="img/icones/detalhe-logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <header class="cabecalho">
-        <nav class="menu">
-            <a href="#"><img class="header-img" src="img/shalltear-fofa.jpg" alt="logo"></a>
-            <ul class="menu">
-                <li><a href="https://www.linkedin.com/in/thiago-omena-bb5884226" rel="external" target="_blank">Linkedin</a></li>
-                <li><a href="https://github.com/Ohmena" rel="external" target="_blank">Meu Perfil</a></li>
-                <li><a href="#about">Sobre</a></li>
-            </ul>
-        </nav>
 
-        <article class="cabecalho-primeiro">
-            <div class="cabecalho-conteudo">
-                <h2>Black Hanekawa</h2>
-                <p>Cê tem que entender que essa cena era completamente necessária para o enredo do anime. A complexidade na posição e status da Hanekawa em dado momento refletem em...</p>
-                <a href="https://www.youtube.com/watch?v=on6v8hpjDr0" rel="external" target="_blank">DESCUBRA</a>
-            </div>
-            <img class="header-mainimg" src="img/hanekawa.jpg" alt="imagem principal hanekawa">
-        </article>
+<body>
+    <header class="header-bg">
+        <div class="header-itens container">
+            <div class="header-itens-img"><a href="#"><img src="img/icones/logo.svg" alt="logo do site"></a></div>
+            <nav>
+                <ul class="header-menu font-m">
+                    <li><a href="https://github.com/Ohmena" target="_blank" rel="external">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/thiago-omena-bb5884226/" target="_blank"
+                            rel="external">Linkedin</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="main-content">
-            <div class="container">
-                <h2>PROJETOS</h2>
+    <main class="principal-bg">
+        <div class="container principal-itens">
+            <h1 class="font-gg cor-5">Bem-vindos<span class="cor-decorativa">!</span></h1>
+            <div class="principal-p">
+                <p class="cor-4 font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt maxime inventore expedita perferendis, possimus eos hic quibusdam esse asperiores quaerat omnis reiciendis blanditiis temporibus molestias veniam optio id itaque!</p>
             </div>
-            <div class="flex-content">
-                <a href="pages/projeto-bikcraft/index.html" rel="external" target="_blank"><img src="img/nimbus-home.jpg" alt=""></a>
-                <span class="texto">Projeto final da Bikcraft</span>
-            </div>
-            <div class="flex-content">
-                <a href="pages/ballebot.html"><img class="balle" src="pages/img/Group-4.svg" alt=""></a>
-                <span class="texto">Landing Page do projeto BalleBot</span>
-            </div>
-            <div class="flex-content">
-                <a href="pages/exercicio-lobo/index.html" rel="external" target="_blank"><img src="img/perfil.jpg" alt=""></a>
-                <span class="texto">Exercício do Origamid</span>
-            </div>
-            <div class="flex-content">
-                <a href="https://myanimelist.net/character/70069/Kurumi_Tokisaki" rel="external" target="_blank"><img src="img/kurumi.jpg" alt=""></a>
-                <span class="texto">Maluca do jeito que eu gosto</span>
-            </div>
-        </section>
-
-        <article class="quote">
-            <div id="about" class="quote-elements">
-                <h2>Site criado com base no exercício de Landing Page do <a href="https://www.theodinproject.com/lessons/foundations-landing-page" rel="external" target="_blank">The Odin Project</a>. Para uma primeira tentativa, não achei que ficou tão ruim, mas certamente, está longe de ser o mais otimizado possível.</h2>
-            </div>
-        </article>
-
-        <article class="action">
-            <div class="action-items">
-                <h2>IMPERDÍVEL!</h2>
-                <p>Clique nesse botão e descubra se a Kushida de Classroom of the Elite irá deixar o cabelo crescer!</p>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="external" target="_blank">ABRIR</a>
-            </div>    
-        </article>
-
-        <footer class="rodape">
-            <p>COPYRIGHT © Ohmena 2022</p>
-        </footer>
+            <div class="principal-btn"><a class="botao cor-6 font-m" href="#projetos">Projetos</a></div>
+        </div>
     </main>
+
+    <article class="projetos" id="projetos">
+        <div class="container">
+            <h2 class="projetos-titulo font-g-lista cor-bg">Projetos</h2>
+        </div>
+        <div class="projetos-grid">
+            <div class="projetos-grid-img">
+                <img src="img/projeto-bikcraft-min.jpg" alt="Projeto Bikcraft" width="950" height="450">
+            </div>
+            <div class="projetos-grid-itens">
+                <h3 class="font-mg">Bikcraft</h3>
+                <p class="font-m">Página criada durante o curso de <strong>HTML</strong> e <strong>CSS</strong> da
+                    Origamid. Apresenta efeitos bastante interessantes feitos com <strong>CSS</strong> e um uso criativo
+                    do <strong>box-shadow</strong> para criar ilusão de que a imagem está estourando o container.</p>
+                <div class="projetos-lingua">
+                    <img src="img/icones/html5.svg" width="48" height="48" alt="">
+                    <img src="img/icones/css3-alt.svg"width="48" height="48" alt="">
+                </div>
+                <a class="botao" href="pages/projeto-bikcraft/index.html" rel="external" target="_blank">Acessar</a>
+            </div>
+        </div>
+
+        <div class="projetos-grid">
+            <div class="projetos-grid-img">
+                <img src="img/projeto-ballerini-min.jpg" alt="Projeto Ballebot" width="950" height="450">
+            </div>
+            <div class="projetos-grid-itens">
+                <h3 class="font-mg">Ballebot</h3>
+                <p class="font-m">Landing Page do projeto Ballebot da <a class="cor-bg link-escuro"
+                        href="https://www.youtube.com/@rafaellaballerini" title="Visitar https://www.youtube.com/@rafaellaballerini" rel="external" target="_blank">Rafaella
+                        Ballerini</a> e também o meu <strong>primeiro projeto</strong>. Página bastante simples porém
+                            bonita e eficiente. Ótima para treinar o uso do <strong>flexbox</strong>.
+                </p>
+                <div class="projetos-lingua">
+                    <img src="img/icones/html5.svg" width="48" height="48" alt="">
+                    <img src="img/icones/css3-alt.svg"width="48" height="48" alt="">
+                </div>
+                <a class="botao" href="pages/ballebot.html">Acessar</a>
+            </div>
+        </div>
+
+        <div class="projetos-grid">
+            <div class="projetos-grid-img">
+                <img src="img/projeto-lobo-min.jpg" alt="Projeto Origamid" width="950" height="450">
+            </div>
+            <div class="projetos-grid-itens">
+                <h3 class="font-mg">Lobo Origamid</h3>
+                <p class="font-m">Outra página criada durante o curto de <strong>HTML</strong> e <strong>CSS</strong> da
+                    Origamid. Além de ser meu primeiro contato com <strong>classes utilitárias</strong>, esse projeto
+                    foi excelente para treinar o uso do <strong>grid layout</strong>, <strong>flexbox</strong> e
+                    <strong>pseudo-elementos</strong>.
+                </p>
+                <div class="projetos-lingua">
+                    <img src="img/icones/html5.svg" width="48" height="48" alt="">
+                    <img src="img/icones/css3-alt.svg"width="48" height="48" alt="">
+                </div>
+                <a class="botao" href="pages/exercicio-lobo/index.html" rel="external" target="_blank">Acessar</a>
+            </div>
+        </div>
+
+    </article>
+
+    <article class="informacao-bg">
+        <div class="container informacao-itens" id="habilidades">
+            <h2 class="projetos-titulo font-g-lista cor-1">Habilidades</h2>
+            <ul>
+                <li>
+                    <img src="img/icones/html5.svg" width="48" height="48" alt="">
+                    <h3 class="font-m-b cor-3">HTML5</h3>
+                    <p class="cor-4">HTML é uma linguagem de marcação usada para estruturar e apresentar conteúdo na web</p>
+                </li>
+                <li>
+                    <img src="img/icones/css3-alt.svg" width="48" height="48" alt="">
+                    <h3 class="font-m-b cor-3">CSS3</h3>
+                    <p class="cor-4">CSS é o responsável por controlar a aparência e o posicionamento dos elementos do HTML</p>
+                </li>
+                <li>
+                    <img src="img/icones/square-js.svg" width="48" height="48" alt="">
+                    <h3 class="font-m-b cor-3">JAVASCRIPT</h3>
+                    <p class="cor-4">É uma linguagem de programação usada na web para adicionar interatividade e comportamento dinâmico às páginas</p>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="sobre-bg">
+        <div class="container sobre" id="sobre">
+            <h2 class="projetos-titulo font-g-lista cor-1">SOBRE</h2>
+            <dl>
+                <div class="faq">
+                    <dt class="font-mg cor-1">O que é essa página?</dt>
+                    <dd class="cor-2 font-m">A princípio, esse site havia sido criado com base no exercício de landing page do <a href="https://www.theodinproject.com/lessons/foundations-landing-page" title="Visitar https://www.theodinproject.com/lessons/foundations-landing-page" rel="external" target="_blank">The Odin Project</a>, porém eu acabei mudando diversas coisas até chegar nesse resultado. Pode-se dizer que é algo completamente diferente e agora é meu portifólio.</dd>
+                </div>
+                <div class="faq">
+                    <dt class="font-mg cor-1">Há quanto tempo você estuda/trabalha com Front-End?</dt>
+                    <dd class="font-m cor-2">Comecei meus estudos em abril de 2022 por curiosidade, porém só agora em 2023 resolvi colocar a mão na massa.</dd>
+                </div>
+                <div class="faq">
+                    <dt class="font-mg cor-1">Quais cursos você fez e/ou vai fazer?</dt>
+                    <dd class="font-m cor-2">Fiz o curso de HTML e CSS para iniciantes da <strong class="cor-1 font-s-b">Origamid</strong> e pretendo terminar o de Javascript também.</dd>
+                </div>
+                <div class="faq">
+                    <dt class="font-mg cor-1">Cursando alguma faculdade?</dt>
+                    <dd class="font-m cor-2">Sim. Atualmente eu faço Sistemas para Internet na faculdade <strong class="cor-1 font-s-b">Estacio</strong>.</dd>
+                </div>
+            </dl>
+        </div>
+    </article>
+    <footer class="footer-bg">
+        <div class="container footer">
+            <p>COPYRIGHT © Ohmena 2023</p>
+        </div>
+    </footer>
 </body>
 </html>

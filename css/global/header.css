@@ -1,0 +1,86 @@
+.header-bg {
+    background-color: #000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.header-itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a {
+    display: block;
+    position: relative;
+}
+
+.header-itens img {
+    width: 150px;
+}
+
+.header-itens-img {
+    position: relative;
+    z-index: 1;
+}
+
+.header-itens-img::before {
+    content: "";
+    display: block;
+    height: 58px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    width: 58px;
+    position: absolute;
+    background-image: url("../../img/icones/detalhe-logo.svg");
+    z-index: -1;
+}
+
+/*animação reutilizada do projeto bikcraft */
+.header-menu a::after {
+    content: "";
+    display: block;
+    width: 0;
+    background-color: var(--cor-1);
+    height: 2px;
+    bottom: -5px;
+    position: absolute;
+    transition: .3s
+}
+
+.header-menu a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .header-menu {
+        gap: 20px;
+    }
+    .header-menu a {
+        background-color: var(--cor-bg);
+        padding: 10px 16px;
+        border-radius: 4px;
+    }
+    .header-menu a::after {
+        display: none;
+    }
+    .header-itens {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-menu {
+        font-size: 1rem;
+    }
+}

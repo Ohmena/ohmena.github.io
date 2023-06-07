@@ -1,0 +1,52 @@
+:root {
+    --cor-bg: #161616;
+    --cor-lista:#1a1a1a; 
+    --cor-btn: #6B7B8B;
+    --cor-decorativa: #b423b4;
+    --cor-1: #fff; /*titulos */
+    --cor-2: #b2b2b2; /*paragrafos e links*/
+    --cor-3: #9a9a9a;
+    --cor-4: #8a8a8a;
+    --cor-5: #f7f7f7;
+    --cor-6: #b3b3b3;
+}
+
+p {
+    color: var(--cor-2);
+}
+
+h1, h2, a {
+    color: var(--cor-1);
+}
+
+.cor-1 {
+    color: var(--cor-1);
+}
+
+.cor-2 {
+    color: var(--cor-2);
+}
+
+.cor-3 {
+    color: var(--cor-3);
+}
+
+.cor-4 {
+    color: var(--cor-4);
+}
+
+.cor-5 {
+    color: var(--cor-5);
+}
+
+.cor-6 {
+    color: var(--cor-6);
+}
+
+.cor-bg {
+    color: var(--cor-bg);
+}
+
+.cor-decorativa {
+    color: var(--cor-decorativa);
+}

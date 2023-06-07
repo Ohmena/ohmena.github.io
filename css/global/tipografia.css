@@ -1,0 +1,52 @@
+.font-s, .font-s-b {
+    font-size: 1rem;
+}
+.font-s-b {
+    font-weight: 600;
+}
+
+.font-m {
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.font-m-b {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.font-mg {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.font-g-lista {
+    font: 600 3rem/1.5 "Source Sans Pro", sans-serif;
+}
+
+.font-g {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.font-gg {
+    font-size: 5rem;
+    line-height: 1.5;
+    
+}
+
+
+@media (max-width: 800px) {
+    .font-mg {
+        font-size: 1.5rem;
+    }
+    .font-g {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .font-mg {
+        font-size: 1.25rem;
+    }
+}

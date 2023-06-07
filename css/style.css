@@ -1,0 +1,21 @@
+/*cabeçalho */
+@import "global/header.css";
+@import "global/footer.css";
+
+/*resets, tipografia e cores */
+@import "global/utilidades.css";
+@import "global/tipografia.css";
+@import "global/cores.css";
+
+/*conteudo principal */
+@import "home/principal.css";
+
+/*projetos */
+@import "home/projetos.css";
+
+/*informações */
+
+@import "home/informacao.css";
+
+/*sobre */
+@import "home/sobre.css";

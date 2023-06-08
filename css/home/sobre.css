@@ -65,5 +65,47 @@
         padding-bottom: 60px;
         padding-top: 40px;
     }
+    .faq dt {
+        font-size: 1.125rem;
+    }
 }
 
+[data-accordion="list"] dt::after, [data-accordion="list"] dt.ativo::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 25px;
+    right: -10px;
+    position: absolute;
+}
+
+[data-accordion="list"] dt::after {
+    background:url("../../img/icones/arrow-turn-up-solid.svg") no-repeat;
+}
+
+[data-accordion="list"] dt.ativo::after {
+    background:url("../../img/icones/arrow-turn-down-solid.svg") no-repeat;
+}
+
+
+.js [data-accordion="list"] dd {
+    display: none;
+}
+
+[data-accordion="list"] dd.ativo {
+    display: block;
+    animation: animarAccordion .5s forwards;
+}
+
+@keyframes animarAccordion {
+    from {
+        max-height: 0px;
+        transform: translate3d(-20px, 0, 0);
+        opacity: 0;
+    }
+    to {
+        max-height: 300px;
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}

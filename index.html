@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio Front-End de Thiago Omena">
     <title>Ohmena | Portifólio</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="img/icones/detalhe-logo.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js')</script>
+
 </head>
 
 <body>
@@ -125,7 +126,7 @@
     <article class="sobre-bg">
         <div class="container sobre" id="sobre">
             <h2 class="projetos-titulo font-g-lista cor-1">SOBRE</h2>
-            <dl>
+            <dl data-accordion="list">
                 <div class="faq">
                     <dt class="font-mg cor-1">O que é essa página?</dt>
                     <dd class="cor-2 font-m">A princípio, esse site havia sido criado com base no exercício de landing page do <a href="https://www.theodinproject.com/lessons/foundations-landing-page" title="Visitar https://www.theodinproject.com/lessons/foundations-landing-page" rel="external" target="_blank">The Odin Project</a>, porém eu acabei mudando diversas coisas até chegar nesse resultado. Pode-se dizer que é algo completamente diferente e agora é meu portifólio.</dd>
@@ -150,5 +151,6 @@
             <p>COPYRIGHT © Ohmena 2023</p>
         </div>
     </footer>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>

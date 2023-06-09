@@ -1,0 +1,117 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-body);
+    color: var(--color-primary);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 70px;
+    padding-right: 40px;
+}
+
+.button {
+    display: block;
+    padding: 15px 40px 15px 40px;
+    background-color: var(--color-btn);
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.button:hover {
+    background-color: var(--color-btn-hover);
+}
+
+.heading-bg::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+    left: 55px;
+    top: -5px;
+    border-radius: 10px;
+    background-color: var(--color-detail);
+    position: absolute;
+    z-index: -1;
+}
+
+.wpp-fixed {
+    position: fixed;
+    bottom: 10px;
+    z-index: 5;
+    right: 50px;
+}
+
+.icon-padding {
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.icon-padding:hover {
+    background-color: var(--color-main-btn);
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wpp-fixed {
+        width: 40px;
+        height: 40px;
+        right: 20px;
+    }
+}
+

@@ -1,0 +1,68 @@
+.font-header {
+    font: 700 1.45rem/1.35 'Noto Sans Tamil', 'Arial', sans-serif;
+}
+
+.font-main-span {
+    font: 600 1.75rem/1.25 'Noto Sans Tamil', 'Arial', sans-serif; /* -> 1.5rem */
+}
+
+.font-main-link {
+    font: 700 1.875rem/1.3 'Noto Sans Tamil', 'Arial', sans-serif; /* -> 1.6rem */
+}
+
+.font-form-h2 {
+    font: 700 2rem/1.3 'Noto Sans Tamil', 'Arial', sans-serif;
+}
+
+.font-form-item {
+    font: 400 1.5rem/1.3 'Noto Sans Tamil', 'Arial', sans-serif;
+}
+
+.font-form-btn {
+    font: 700 1.7rem/1.3 'Noto Sans Tamil', 'Arial', sans-serif;
+}
+
+.font-heading {
+    font: 700 2.5rem/1.25 'Noto Sans Tamil', 'Arial', sans-serif; /* -> 2.25 */
+}
+
+.font-heading-2 {
+    font: 700 1.25rem/1.3 'Noto Sans Tamil', 'Arial', sans-serif; /* -> 1rem */
+}
+
+.font-footer-h2 {
+    font: 800 2.25rem/1.25 'Noto Sans Tamil', 'Arial', sans-serif;
+}
+
+.font-footer-span {
+    font: 400 1.25rem/1.2 'Noto Sans Tamil', 'Arial', sans-serif; 
+}
+
+.font-footer-link {
+    font: 800 1.25rem/1.2 'Noto Sans Tamil', 'Arial', sans-serif;
+}
+
+.font-paragraph {
+    font: 400 1.125rem/1.2 'Noto Sans Tamil', 'Arial', sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .font-header {
+        font-size: 1.125rem;
+    }
+    .font-heading {
+        font-size: 2.25rem;
+    }
+    .font-main-span, .font-form-btn {
+        font-size: 1.5rem;
+    }
+    .font-main-link {
+        font-size: 1.6rem;
+    }
+    .font-heading-2, .font-footer-span, .font-footer-link, .font-paragraph {
+        font-size: 1rem;
+    }
+    .font-footer-h2 {
+        font-size: 1.875rem;
+    }
+}

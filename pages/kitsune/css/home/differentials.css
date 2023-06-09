@@ -1,0 +1,139 @@
+.differential {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    gap: 100px;
+}
+
+.differential-items {
+    padding: 90px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--color-primary);
+    box-shadow: inset 0px -10px var(--color-btn);
+}
+
+.differential-items h2 {
+    margin-bottom: 26px;
+    align-self: center;
+}
+
+.differential-items button {
+    align-self: center;
+    border: none;
+}
+
+.differential-items .button {
+    cursor: pointer;
+}
+
+.differential-img {
+    background-color: var(--color-btn);
+    align-self: center;
+    margin-bottom: 70px;
+    padding: 13px 10px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    
+}
+.differential-img::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    position: absolute;
+    background: var(--color-btn);
+}
+
+.differential-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.differential-form input {
+    border: none;
+    outline: none;
+    margin-bottom: 38px;
+    padding-left: 20px;
+    border-bottom: 2px solid #454645;
+    color: var(--color-form);
+}
+
+.differential-form input::placeholder {
+    color: var(--color-form);
+}
+
+.differential-form input:focus::placeholder {
+    color: var(--color-form-click);
+}
+
+.services > div {
+    display: flex;
+    justify-content: center;
+}
+
+.services h2 {
+    margin-bottom: 75px;
+    text-align: center;
+    position: relative;
+    max-width: max-content;
+    z-index: 1;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+}
+
+.services-list li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 60px 20px 60px 20px;
+    border-radius: 10px;
+    gap: 5px 18px;
+}
+
+.services-list li:hover {
+    background-image: linear-gradient(#EB2E4A, #82165D);
+    
+}
+
+.services-list p {
+    grid-column: 2;
+}
+
+@media (max-width: 1200px) {
+    .differential {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .differential {
+        gap: 50px;
+    }
+    .differential-items {
+        padding: 40px 10px;
+    }
+    .services h2 {
+        margin-bottom: 20px;
+    }
+    .services-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .services-list li {
+        padding: 40px 10px 40px 10px;
+    }
+}

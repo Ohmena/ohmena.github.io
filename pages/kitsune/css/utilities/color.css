@@ -1,0 +1,48 @@
+:root {
+    --color-body: #07041A;
+    --color-primary: #fff;
+    --color-btn:#EB2E4A;
+    --color-btn-hover: #C8215D;
+    --color-main-btn: #2F2F2F;
+    --color-form: #333333;
+    --color-form-click: #B4B4B4;
+    --color-detail: #0F0A2D;
+    --color-form-bottom:#464545;
+    --color-footer: #C0C0C0;
+    --color-about-us: #0C0824;
+    --color-footer-extra: #3212FD;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+.color-body {
+    color: var(--color-body);
+}
+.color-btn {
+    color: var(--color-btn);
+}
+
+.color-main-btn {
+    color: var(--color-main-btn);
+}
+
+.color-form {
+    color: var(--color-form);
+}
+
+.color-form-click {
+    color: var(--color-form-click);
+}
+
+.color-form-bottom {
+    color: var(--color-form-bottom);
+}
+
+.color-footer {
+    color: var(--color-footer);
+}
+
+.color-footer-extra {
+    color: var(--color-footer-extra);
+}

@@ -1,0 +1,19 @@
+/*global */
+@import '../css/global/header.css';
+@import '../css/global/footer.css';
+
+/*main content of the page */
+@import '../css/home/main.css';
+
+/*form and our differentials */
+@import '../css/home/differentials.css';
+
+/*about us */
+@import '../css/home/about.css';
+
+/*colors and typography */
+@import '../css/utilities/color.css';
+@import '../css/utilities/typography.css';
+
+/*resets and styles */
+@import '../css/utilities/utility.css';

@@ -20,22 +20,21 @@
 
 .header li  {
     position: relative;
-    display: flex;
-    align-items: center;
 }
 
-.header li::after {
+.header li::before {
     content: "";
     display: block;
     width: 7px;
     height: 7px;
+    top: 10px;
     border-radius: 50%;
-    right: -25px;
+    right: -24px;
     position: absolute;
     background-color: #b9b9b9;
 }
 
-.header li:last-child::after {
+.header li:last-child::before {
     display: none;
 }
 
@@ -68,7 +67,7 @@
         background-color: var(--color-detail);
         border-radius: 10px;
     }
-    .header li::after {
+    .header li::before {
         display: none;
     }
     .header-side {

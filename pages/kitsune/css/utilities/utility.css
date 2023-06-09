@@ -41,9 +41,9 @@ ul {
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
 body {
@@ -61,7 +61,7 @@ body {
 
 .button {
     display: block;
-    padding: 15px 40px 15px 40px;
+    padding: 15px 40px;
     background-color: var(--color-btn);
     border-radius: 10px;
     text-transform: uppercase;

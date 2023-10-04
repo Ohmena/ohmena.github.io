@@ -113,11 +113,11 @@ img {
   transition: .3s;
 }
 
-.apagar img {
+.search-pokemon .apagar img {
   width: 20px;
 }
 
-.apagar:hover {
+.search-pokemon .apagar:hover {
   transform: rotate(180deg);
   transition: 1s;
 }

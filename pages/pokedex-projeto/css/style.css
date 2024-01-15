@@ -139,6 +139,11 @@ img {
   border-radius: 10px;
   padding: 50px;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.pokemon-item.disabled {
+  display: none;
 }
 
 .pokemon-img img {
@@ -203,6 +208,10 @@ img {
   animation: animateVertical 1s ease-in-out;
 }
 
+.animate-card {
+  animation: animateCard 1s ease-in-out
+}
+
 @keyframes animateVertical {
   from {
     opacity: 0;
@@ -211,6 +220,17 @@ img {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes animateCard {
+  from {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
   }
 }
 

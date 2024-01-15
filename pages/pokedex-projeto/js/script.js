@@ -134,8 +134,37 @@ const createPokemon = (pokemon) => {
     </div>
   `;
 
+  //pega os status do pokemon de forma dinâmica
+  const getStatusSpans = (stats) => {
+    return stats.map((stat) => {
+      return `<span>${stat.stat.name}: ${stat.base_stat}</span>`;
+    }).join('');
+  }
+
+  const pokemonStatusInnerHTML = `
+    <h2>STATUS</h2>
+    ${getStatusSpans(pokemon.stats)}
+  `;
+  
+  //criação do card com os status dos pokemon
+  const pokemonStatus = document.createElement('div');
+  pokemonStatus.classList.add('pokemon-item', 'animate-card', 'disabled');
+  pokemonStatus.innerHTML = pokemonStatusInnerHTML;
+  pokemonStatus.style.backgroundColor = backgroundColor;
+  pokemonItem.appendChild(pokemonStatus);
+
   newDiv.innerHTML = pokemonInnerHTML;
   pokemonItem.appendChild(newDiv);  
+
+  newDiv.addEventListener('click', () => {
+    newDiv.classList.add('disabled', 'animate-card')
+    pokemonStatus.classList.remove('disabled')
+  });
+
+  pokemonStatus.addEventListener('click', () => {
+    pokemonStatus.classList.add('disabled');
+    newDiv.classList.remove('disabled');
+  })  
 };
 
 /*Barra de pesquisas */
@@ -151,8 +180,12 @@ function handleNameChange(event) {
   const pokemonElements = document.querySelectorAll('.pokemon-item');
 
   pokemonElements.forEach((pokemonElement) => {
-    const pokemonName = pokemonElement.querySelector('h2').innerHTML.toLowerCase();
-    const pokemonNumber = pokemonElement.querySelector('.pokemon-number').innerHTML;
+    const pokemonNameElement = pokemonElement.querySelector('h2');
+    const pokemonNumberElement = pokemonElement.querySelector('.pokemon-number');
+
+     // verificar se os elementos existem antes de acessar suas propriedades
+    const pokemonName = pokemonNameElement ? pokemonNameElement.innerHTML.toLowerCase() : '';
+    const pokemonNumber = pokemonNumberElement ? pokemonNumberElement.innerHTML : '';
 
     if (pokemonName.includes(searchTerm) || pokemonNumber === searchTerm) {
       pokemonElement.style.display = 'flex'; // mostrar o pokémon se o termo de pesquisa corresponder

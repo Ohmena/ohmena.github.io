@@ -179,6 +179,11 @@ function handleNameChange(event) {
   const searchTerm = searchInput.value.toLowerCase();
   const pokemonElements = document.querySelectorAll('.pokemon-item');
 
+  if (searchTerm.trim() === '') {
+    console.log('adicione um pokemon');
+    return;
+  }
+
   pokemonElements.forEach((pokemonElement) => {
     const pokemonNameElement = pokemonElement.querySelector('h2');
     const pokemonNumberElement = pokemonElement.querySelector('.pokemon-number');

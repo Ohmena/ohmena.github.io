@@ -83,6 +83,10 @@ img {
   color: #5e4d7b;
 }
 
+.search-pokemon input:focus {
+  border: 1px solid #8b2fb2;
+}
+
 .pokemon-button {
   display: flex;
   gap: 10px;
@@ -100,8 +104,8 @@ img {
 
 .search-pokemon .enviar {
   color: #1a161d;
-  background-color: rgb(115, 30, 180);
-  padding: 5px 10px;
+  background-color: #ac4ef5;
+  padding: 5px 20px;
   border-radius: 5px;
 }
 
@@ -226,7 +230,7 @@ img {
 }
 
 .animate-card {
-  animation: animateCard 1s ease-in-out
+  animation: animateCard 1s forwards;
 }
 
 @keyframes animateVertical {
@@ -242,11 +246,9 @@ img {
 
 @keyframes animateCard {
   from {
-    opacity: 0;
     transform: rotateY(90deg);
   }
   to {
-    opacity: 1;
     transform: rotateY(0);
   }
 }

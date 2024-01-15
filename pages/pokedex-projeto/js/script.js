@@ -111,7 +111,7 @@ const createPokemon = (pokemon) => {
   newDiv.classList.add('pokemon-item', 'animate');
 
   const backgroundColor = getColorByType(pokemon.types[0].type.name);
-  newDiv.style.backgroundColor = backgroundColor;
+  newDiv.style.border = `2px solid ${backgroundColor}`;
 
   const typeNames = pokemon.types.map((typeObj) => typeObj.type.name);
 
@@ -119,7 +119,7 @@ const createPokemon = (pokemon) => {
     const typeSpan = document.createElement('span');
     typeSpan.innerHTML = typeName;
     typeSpan.classList.add('type-item');
-    typeSpan.style.backgroundColor = getSpanColor(typeName);
+    typeSpan.style.border = `2px solid ${getSpanColor(typeName)}`;
     return typeSpan.outerHTML;
   }).join('');
 
@@ -127,8 +127,8 @@ const createPokemon = (pokemon) => {
     <div class="pokemon-img">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png" alt="${pokemon.name}">
     </div>
-    <span class="pokemon-number">${pokemon.id}</span>
-    <h2>${pokemon.name}</h2>
+    <span class="pokemon-number pokemon-number-color">${pokemon.id}</span>
+    <h2 class="pokemon-name-color">${pokemon.name}</h2>
     <div class="type">
       ${typeSpans}
     </div>
@@ -137,12 +137,12 @@ const createPokemon = (pokemon) => {
   //pega os status do pokemon de forma dinâmica
   const getStatusSpans = (stats) => {
     return stats.map((stat) => {
-      return `<span>${stat.stat.name}: ${stat.base_stat}</span>`;
+      return `<span class="color-stats">${stat.stat.name}: ${stat.base_stat}</span>`;
     }).join('');
   }
 
   const pokemonStatusInnerHTML = `
-    <h2>STATUS</h2>
+    <h2 class="color-title-stat">STATUS</h2>
     ${getStatusSpans(pokemon.stats)}
   `;
   
